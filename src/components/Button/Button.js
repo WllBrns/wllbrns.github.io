@@ -1,5 +1,9 @@
-import './Button.css';
+import "./Button.css";
 
-export const Button = ({label, onClick}) => {
-    return <button className='button' onClick={onClick}>{label}</button>
-}
+export const Button = ({ label, onClick, href }) => {
+  return (
+    <a href={href} className="button" onClick={onClick}>
+      {label}
+    </a>
+  );
+};
