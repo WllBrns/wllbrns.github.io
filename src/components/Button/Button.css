@@ -8,9 +8,19 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button:hover {
     background-color: #8B62FF;
     color: #080D18;
+}
+
+.button.disabled {
+    cursor: not-allowed;
+}
+
+.button.disabled:hover {
+    background: none;
+    color: #8B62FF;
 }
