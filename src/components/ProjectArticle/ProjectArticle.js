@@ -6,9 +6,13 @@ export const ProjectArticle = ({ articleData }) => {
   return (
     <article className="projectArticle">
       <img className="projectImg" src={img} />
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <Button href={projectLink} label={`Go to ${name}`}></Button>
+      <h2 className="projectHeading">{name}</h2>
+      <p className="projectParagraph">{description}</p>
+      <Button
+        className="projectButton"
+        href={projectLink}
+        label={`Click me`}
+      ></Button>
     </article>
   );
 };
