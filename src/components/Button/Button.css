@@ -9,6 +9,8 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    display: block;
+    width: fit-content;
 }
 
 .button:hover {
