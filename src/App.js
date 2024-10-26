@@ -2,8 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "./components/Button/Button";
 import { ProjectArticle } from "./components/ProjectArticle/ProjectArticle";
+import { Navbar } from "./components/Navbar/Navbar";
+import { useState } from "react";
 
 function App() {
+  const [isToggle, setIsToggled] = useState(false);
+
   const projectData = [
     {
       name: "First Project",
@@ -21,6 +25,8 @@ function App() {
     },
   ];
 
+  const navbarLinks = ["Home", "About", "Projects", "Contact"];
+
   const article = projectData.map((article) => (
     <ProjectArticle articleData={article} />
   ));
@@ -31,22 +37,29 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button label="Click me" onClick={Alert} />
-      </header>
-
+      <Navbar links={navbarLinks}></Navbar>
       <article className="projects">
         <h2>Projects</h2>
         {article}
       </article>
+      <button onClick={() => setIsToggled(!isToggle)}>{`${
+        isToggle ? "x" : "-"
+      }`}</button>
+      <button onClick={() => setIsToggled(!isToggle)}>{`${
+        isToggle ? "x" : "-"
+      }`}</button>{" "}
+      <button onClick={() => setIsToggled(!isToggle)}>{`${
+        isToggle ? "x" : "-"
+      }`}</button>{" "}
+      <button onClick={() => setIsToggled(!isToggle)}>{`${
+        isToggle ? "x" : "-"
+      }`}</button>{" "}
+      <button onClick={() => setIsToggled(!isToggle)}>{`${
+        isToggle ? "x" : "-"
+      }`}</button>{" "}
+      <button onClick={() => setIsToggled(!isToggle)}>{`${
+        isToggle ? "x" : "-"
+      }`}</button>
     </div>
   );
 }
