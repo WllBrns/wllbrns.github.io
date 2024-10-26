@@ -1,0 +1,18 @@
+.navbar {
+    width: 411px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.navbar a {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: rgba(1,1,1,0);
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    border-bottom-color: #8B62FF;
+}
+
