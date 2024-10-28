@@ -9,6 +9,12 @@ body {
 
 .AboutSection {
     color: white;
+    width: 504px;
+    margin:  48px auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+
 }
 
 .AboutSection h2 {
@@ -17,7 +23,7 @@ body {
     font-weight: 700;
     line-height: 43.57px;
     text-align: left;
-
+    margin: 0px;
 }
 
 .AboutSection p {
@@ -27,5 +33,6 @@ body {
     font-weight: 400;
     line-height: 19.36px;
     text-align: left;
+    margin: 0px;
 
 }
