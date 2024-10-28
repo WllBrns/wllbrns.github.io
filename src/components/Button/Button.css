@@ -15,7 +15,8 @@
 
 .button:hover {
     background-color: #8B62FF;
-    color: #080D18;
+    /* color: #080D18; */
+    color: #7DFFD1;
 }
 
 .button.disabled {

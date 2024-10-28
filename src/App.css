@@ -1,38 +1,40 @@
 .app {
-    display: flex;
+  display: flex;
 }
 
 body {
-    background-color: #080D18;
-    padding: 32px;
+  background-color: #080D18;
+  padding: 32px;
 }
 
-.AboutSection {
-    color: white;
-    width: 504px;
-    margin:  48px auto;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 16px;
-
+.Section {
+  color: white;
+  width: 504px;
+  margin:  48px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-.AboutSection h2 {
-    font-family: Inter;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 43.57px;
-    text-align: left;
-    margin: 0px;
+.SectionHeader {
+  color: white;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.57px;
+  text-align: left;
+  margin: 0px;
+  width: 504px;
 }
 
-.AboutSection p {
+.Section p {
 
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    text-align: left;
-    margin: 0px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  margin: 0px;
 
 }
