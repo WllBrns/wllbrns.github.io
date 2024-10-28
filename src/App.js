@@ -40,7 +40,7 @@ function App() {
         </style>
       </head>
 
-      <Navbar links={navbarLinks}></Navbar>
+      <Navbar links={navbarLinks} />
 
       <div className="AboutSection">
         <h2>
