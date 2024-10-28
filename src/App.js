@@ -31,35 +31,15 @@ function App() {
     <ProjectArticle articleData={article} />
   ));
 
-  function Alert() {
-    window.alert("yay");
-  }
-
   return (
     <div className="App">
       <Navbar links={navbarLinks}></Navbar>
-      <article className="projects">
-        <h2>Projects</h2>
-        {article}
-      </article>
-      <button onClick={() => setIsToggled(!isToggle)}>{`${
+
+      {article}
+
+      {/* <button onClick={() => setIsToggled(!isToggle)}>{`${
         isToggle ? "x" : "-"
-      }`}</button>
-      <button onClick={() => setIsToggled(!isToggle)}>{`${
-        isToggle ? "x" : "-"
-      }`}</button>{" "}
-      <button onClick={() => setIsToggled(!isToggle)}>{`${
-        isToggle ? "x" : "-"
-      }`}</button>{" "}
-      <button onClick={() => setIsToggled(!isToggle)}>{`${
-        isToggle ? "x" : "-"
-      }`}</button>{" "}
-      <button onClick={() => setIsToggled(!isToggle)}>{`${
-        isToggle ? "x" : "-"
-      }`}</button>{" "}
-      <button onClick={() => setIsToggled(!isToggle)}>{`${
-        isToggle ? "x" : "-"
-      }`}</button>
+      }`}</button> */}
     </div>
   );
 }
