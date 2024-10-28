@@ -33,7 +33,25 @@ function App() {
 
   return (
     <div className="App">
+      <head>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+      </head>
+
       <Navbar links={navbarLinks}></Navbar>
+
+      <div className="AboutSection">
+        <h2>
+          Hi, my name is <bold>Will</bold>
+        </h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s
+        </p>
+      </div>
 
       {article}
 

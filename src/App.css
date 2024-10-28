@@ -6,3 +6,26 @@ body {
     background-color: #080D18;
     padding: 32px;
 }
+
+.AboutSection {
+    color: white;
+}
+
+.AboutSection h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.57px;
+    text-align: left;
+
+}
+
+.AboutSection p {
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+
+}
