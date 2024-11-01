@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "./components/Button/Button";
 import { ProjectArticle } from "./components/ProjectArticle/ProjectArticle";
 import { Navbar } from "./components/Navbar/Navbar";
-import { useState } from "react";
+// import { useState } from "react";
 
 function App() {
-  const [isToggle, setIsToggled] = useState(false);
+  // const [isToggle, setIsToggled] = useState(false);
 
   const projectData = [
     {
@@ -56,6 +54,23 @@ function App() {
       <div className="Section">
         <h2 className="SectionHeader">Projects</h2>
         {article}
+      </div>
+
+      <div className="Section">
+        <h2>Let's talk</h2>
+        <p>
+          Email: <a href="mailto: burnsw72@gmail.com"> burnsw72@gmail.com</a>
+        </p>
+        <p>
+          GitHub:{" "}
+          <a href="https://github.com/WllBrns"> https://github.com/WllBrns</a>
+        </p>
+        <p>
+          LinkedIn:{" "}
+          <a href="https://www.linkedin.com/in/william-burns-4a18bb225/">
+            https://www.linkedin.com/in/william-burns-4a18bb225/
+          </a>
+        </p>
       </div>
 
       {/* <button onClick={() => setIsToggled(!isToggle)}>{`${
