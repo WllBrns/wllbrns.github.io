@@ -57,9 +57,9 @@ function App() {
       </div>
 
       <div className="Section">
-        <h2>Let's talk</h2>
+        <h2 className="SectionHeader">Let's talk</h2>
         <p>
-          Email: <a href="mailto: burnsw72@gmail.com"> burnsw72@gmail.com</a>
+          Email: <a href="burnsw72@gmail.com"> burnsw72@gmail.com</a>
         </p>
         <p>
           GitHub:{" "}
