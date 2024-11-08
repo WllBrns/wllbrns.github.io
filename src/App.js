@@ -23,7 +23,7 @@ function App() {
     },
   ];
 
-  const navbarLinks = ["Home", "About", "Projects", "Contact"];
+  const navbarLinks = ["About", "Projects", "Contact"];
 
   const article = projectData.map((article) => (
     <ProjectArticle articleData={article} />
@@ -40,7 +40,7 @@ function App() {
 
       <Navbar links={navbarLinks} />
 
-      <div className="Section">
+      <div className="Section aboutSection">
         <h2 className="SectionHeader">
           Hi, my name is <strong>Will</strong>
         </h2>
@@ -51,12 +51,12 @@ function App() {
         </p>
       </div>
 
-      <div className="Section">
+      <div className="Section projectsSection">
         <h2 className="SectionHeader">Projects</h2>
         {article}
       </div>
 
-      <div className="Section">
+      <div className="Section contactSection">
         <h2 className="SectionHeader">Let's talk</h2>
         <p>
           Email: <a href="burnsw72@gmail.com"> burnsw72@gmail.com</a>
