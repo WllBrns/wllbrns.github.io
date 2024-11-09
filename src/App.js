@@ -23,24 +23,21 @@ function App() {
     },
   ];
 
-  const navbarLinks = ["About", "Projects", "Contact"];
+  const navbarLinks = [
+    { name: "About", href: "aboutSection" },
+    { name: "Projects", href: "projectsSection" },
+    { name: "Contact", href: "contactSection" },
+  ];
 
   const article = projectData.map((article) => (
-    <ProjectArticle articleData={article} />
+    <ProjectArticle key={article.name} articleData={article} />
   ));
 
   return (
     <div className="App">
-      <head>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-        </style>
-      </head>
-
       <Navbar links={navbarLinks} />
 
-      <div className="Section aboutSection">
+      <div id="aboutSection" className="Section aboutSection">
         <h2 className="SectionHeader">
           Hi, my name is <strong>Will</strong>
         </h2>
@@ -51,12 +48,12 @@ function App() {
         </p>
       </div>
 
-      <div className="Section projectsSection">
+      <div id="projectsSection" className="Section projectsSection">
         <h2 className="SectionHeader">Projects</h2>
         {article}
       </div>
 
-      <div className="Section contactSection">
+      <div id="contactSection" className="Section contactSection">
         <h2 className="SectionHeader">Let's talk</h2>
         <p>
           Email: <a href="burnsw72@gmail.com"> burnsw72@gmail.com</a>

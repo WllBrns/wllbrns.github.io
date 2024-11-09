@@ -4,7 +4,7 @@
     justify-content: space-between;
     font-weight: 700;
     margin: auto;
-    color: #FFFF;
+    
 
 }
 
@@ -13,6 +13,9 @@
     border-bottom-width: 3px;
     border-color: rgba(1,1,1,0);
     cursor: pointer;
+    color: #FFFF;
+    text-decoration: none;
+    font-family: Inter;
 }
 
 .navbar a:hover {
