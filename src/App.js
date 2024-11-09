@@ -61,7 +61,7 @@ function App() {
 
       <Section heading={"Let's Talk"}>
         <p className="contactP">
-          <a href="burnsw72@gmail.com">
+          <a href="mailto:burnsw72@gmail.com">
             <IoMdMail /> burnsw72@gmail.com
           </a>
         </p>
