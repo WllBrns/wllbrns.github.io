@@ -40,10 +40,6 @@ section p {
   width: stretch;
 }
 
-.contactSection a {
-  color: white;
-  text-decoration: none;
-}
 
 .contactP * {
   display: block;
