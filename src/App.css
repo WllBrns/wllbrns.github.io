@@ -43,10 +43,11 @@ section p {
 
 .contactP * {
   display: block;
+  color: white;
 }
 
-.contactP a{
+.contactP a {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
 }
