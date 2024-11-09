@@ -8,7 +8,7 @@ body {
   font-family: Inter;
 }
 
-.Section {
+section {
   color: white;
   width: 504px;
   margin:  48px auto;
@@ -29,7 +29,7 @@ body {
   width: 504px;
 }
 
-.Section p {
+section p {
 
   font-family: Inter;
   font-size: 16px;
@@ -38,4 +38,19 @@ body {
   text-align: left;
   margin: 0px;
   width: stretch;
+}
+
+.contactSection a {
+  color: white;
+  text-decoration: none;
+}
+
+.contactP * {
+  display: block;
+}
+
+.contactP a{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
