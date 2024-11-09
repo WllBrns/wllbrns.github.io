@@ -1,6 +1,12 @@
+import { IoMdMail } from "react-icons/io";
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 import "./App.css";
 import { ProjectArticle } from "./components/ProjectArticle/ProjectArticle";
 import { Navbar } from "./components/Navbar/Navbar";
+import { Section } from "./components/Section/Section";
 // import { useState } from "react";
 
 function App() {
@@ -37,38 +43,39 @@ function App() {
     <div className="App">
       <Navbar links={navbarLinks} />
 
-      <div id="aboutSection" className="Section aboutSection">
-        <h2 className="SectionHeader">
-          Hi, my name is <strong>Will</strong>
-        </h2>
+      <Section
+        heading={
+          <span>
+            Hi, my name is <span id="Will">Will</span>
+          </span>
+        }
+      >
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
         </p>
-      </div>
+      </Section>
 
-      <div id="projectsSection" className="Section projectsSection">
-        <h2 className="SectionHeader">Projects</h2>
-        {article}
-      </div>
+      <Section heading={"Projects"} children={article} />
 
-      <div id="contactSection" className="Section contactSection">
-        <h2 className="SectionHeader">Let's talk</h2>
-        <p>
-          Email: <a href="burnsw72@gmail.com"> burnsw72@gmail.com</a>
-        </p>
-        <p>
-          GitHub:{" "}
-          <a href="https://github.com/WllBrns"> https://github.com/WllBrns</a>
-        </p>
-        <p>
-          LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/william-burns-4a18bb225/">
-            https://www.linkedin.com/in/william-burns-4a18bb225/
+      <Section heading={"Let's Talk"}>
+        <p className="contactP">
+          <a href="burnsw72@gmail.com">
+            <IoMdMail /> burnsw72@gmail.com
           </a>
         </p>
-      </div>
+        <p className="contactP">
+          <a href="https://github.com/WllBrns">
+            <FaGithub /> https://github.com/WllBrns
+          </a>
+        </p>
+        <p className="contactP">
+          <a href="https://www.linkedin.com/in/william-burns-4a18bb225/">
+            <FaLinkedin /> https://www.linkedin.com/in/william-burns-4a18bb225/
+          </a>
+        </p>
+      </Section>
 
       {/* <button onClick={() => setIsToggled(!isToggle)}>{`${
         isToggle ? "x" : "-"
