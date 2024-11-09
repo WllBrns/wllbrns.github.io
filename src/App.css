@@ -5,6 +5,7 @@
 body {
   background-color: #080D18;
   padding: 32px;
+  font-family: Inter;
 }
 
 .Section {
@@ -20,7 +21,6 @@ body {
 
 .SectionHeader {
   color: white;
-  font-family: Inter;
   font-size: 36px;
   font-weight: 700;
   line-height: 43.57px;
