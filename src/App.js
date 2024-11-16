@@ -30,9 +30,9 @@ function App() {
   ];
 
   const navbarLinks = [
-    { name: "About", href: "aboutSection" },
-    { name: "Projects", href: "projectsSection" },
-    { name: "Contact", href: "contactSection" },
+    { name: "About", href: "11111" },
+    { name: "Projects", href: "22222" },
+    { name: "Contact", href: "33333" },
   ];
 
   const article = projectData.map((article) => (
@@ -49,6 +49,7 @@ function App() {
             Hi, my name is <span id="Will">Will</span>
           </span>
         }
+        id={"11111"}
       >
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -57,9 +58,9 @@ function App() {
         </p>
       </Section>
 
-      <Section heading={"Projects"} children={article} />
+      <Section heading={"Projects"} id={"22222"} children={article} />
 
-      <Section heading={"Let's Talk"}>
+      <Section heading={"Let's Talk"} id={"33333"}>
         <p className="contactP">
           <a href="mailto:burnsw72@gmail.com">
             <IoMdMail /> burnsw72@gmail.com
